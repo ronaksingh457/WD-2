@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStore</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">TechStore</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-4">
+    <div class="row g-4">
+
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSpIiqfyG3JvHeX5A9uQpn8d3N8C6XCAB8y0P97wBrVFWgF4TTMWM2w-ynB76_WUl6foD13460T81UfFV6BwhkYfe-9DWvY0HqN9MhOJm63Zo7-4OSj0VRfhAXLIRL0dXln_1gEZz7IznA&usqp=CAc" class="card-img-top" height="220" alt="Laptop">
+          <div class="card-body">
+            <h4 class="card-title">
+              Laptop <span class="badge bg-success">New</span>
+            </h4>
+            <p class="card-text">
+              High performance laptop suitable for students and professionals.
+            </p>
+            <h5><b>Price: ₹68,000</b></h5>
+            <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#productModal">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="data:image/jpeg;base64,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" class="card-img-top" height="220" alt="Smartphone">
+          <div class="card-body">
+            <h4 class="card-title">
+              Smartphone <span class="badge bg-danger">Sale</span>
+            </h4>
+            <p class="card-text">
+              Latest smartphone with advanced camera and fast processor.
+            </p>
+            <h5><b>Price: ₹15,000</b></h5>
+            <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#productModal">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="https://shop.zebronics.com/cdn/shop/files/Zeb-Thunder-pic-red-1.jpg?v=1775653079&width=1280" class="card-img-top" height="220" alt="Headphones">
+          <div class="card-body">
+            <h4 class="card-title">
+              Headphones <span class="badge bg-success">New</span>
+            </h4>
+            <p class="card-text">
+              Noise cancelling headphones with high quality sound.
+            </p>
+            <h5><b>Price: ₹5,000</b></h5>
+            <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#productModal">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Product Details</h4>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>This product provides excellent performance, modern design, and premium quality.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-dark text-white text-center p-3">
+    <p class="m-0">Copyright &copy; 2026 TechStore</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
