@@ -1,0 +1,48 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    background-color: grey;
+    height: 400px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+}
+
+input[type="number"] {
+    margin: 1rem;
+    color: gold;
+    background-color: grey;
+    border-radius: 1rem;
+    outline: 2px solid #4CAF50;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+}
+
+button {
+    background-color: rgb(123, 123, 187);
+    border-radius: 1rem;
+}
+
+button:hover {
+    outline: none;
+    background-color: #4CAF50;
+}
