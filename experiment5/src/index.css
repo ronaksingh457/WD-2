@@ -1,0 +1,22 @@
+.container {
+  text-align: center;
+  background-color: rgb(0, 238, 147);
+  height: 50vh;
+  width: 75vh;
+  border-radius: 1rem;
+  margin: auto; /* Moved inside the container block */
+  box-shadow: 0 20px 20px rgb(119, 225, 114); /* Moved inside the container block */
+}
+
+button {
+  margin-top: 30px;
+  margin-left: 20px;
+  height: 30px;
+  font-weight: 700;
+  border-radius: 1rem;
+  background-color: rgb(60, 206, 229); /* Moved inside the button block */
+}
+
+.container h1 {
+  padding: 20px;
+}

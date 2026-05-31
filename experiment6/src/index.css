@@ -1,0 +1,49 @@
+body {
+  background: #121212;
+}
+
+.container {
+  width: 700px;
+  margin: 20px auto;
+  background: #f5f5f5;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px gray;
+  padding: 30px; /* Merged the floating padding block here */
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  font-size: 18px;
+}
+
+button {
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  padding: 10px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.message {
+  margin-top: 15px;
+}
+
+.users-box {
+  background: #eaf4ea;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.users-box ul {
+  list-style-type: decimal;
+  text-align: left;
+  margin-left: 100px;
+  font-size: 20px;
+}
